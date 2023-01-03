@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>登录 131 韩冬雪</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <style>
+        #header{
+            margin: 8px;
+            padding-top: 5px;
+            border-bottom: .8px solid #eee;
+        } 
+        #tnav{
+            display: flex;
+            padding: 5px 0;
+        }
+        #tnav :first-child{
+            font-size: 24px;
+            flex-grow: 1;
+        }
+        #tnav :last-child{
+            font-size: 24px;
+            flex-grow: 1;
+
+        }
+        #box{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #box span{
+            width: 100%;
+        }
+        #box span:nth-of-type(1){
+            margin-top: 80px;
+            text-align: center;
+            font-size: 30px;
+        }
+        #box span:nth-of-type(2){
+            text-align: center;
+            margin: 10px auto;
+            color: #999;
+            font-size: 18px;
+        }
+        #box span:nth-of-type(3){
+            text-align: center;
+            margin: 10px auto;
+            color: #333;
+            font-size: 18px;
+        }
+        #box span:nth-of-type(4){
+            text-align: center;
+            margin-top: 100px;
+            color: #555;
+            font-size: 18px;
+        }
+        #box button{
+            flex-grow: 1;
+            margin: 20px 40px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            background-color: rgb(238, 41, 41);
+            font-size: 20px;
+            color: #fff;
+            padding:10px 30px;
+        }
+        #icon{
+            flex-grow: 1;
+            display: flex;
+        }
+        #wx{
+            flex-grow: 1;
+            text-align: right;
+            padding: 20px;
+        }
+        #wx svg{
+            font-size: 50px;
+            padding-right: 5px;
+        }
+        #wx p{
+            padding: 8px auto;
+            font-size: 16px;
+        }
+        #qq{
+            flex-grow: 1;
+            text-align: left;
+            padding: 20px;
+        }
+        #qq svg{
+            font-size: 50px;
+            padding-left: 5px;
+        }
+        #qq p{
+            padding: 8px auto;
+            font-size: 16px;
+        }
+        #footer{
+            margin-top: 180px;
+            font-size: 14px;
+            color: #999;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="tnav">
+            <a href="#">
+                <span class="iconfont icon-xiangzuojiantou gomanage"></span>
+            </a>
+            <span>手机号登录</span>
+        </div>
+    </header>
+    <main>
+        <div id="box">
+            <span>123****5678</span>
+            <span>手机号认证服务由中国移动提供</span>
+            <button>本机号码一键登录</button>
+            <span>切换手机号</span>
+            <span>其他方式登录</span>
+            <div id="icon">
+                <div id="wx">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+                    <p>微信登录</p>
+                </div>
+                <div id="qq">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                    <p>QQ登录</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>平台用户信息泄露风险由中国人保财险承保</p>
+        <p>登录即表示同意服务协议、隐私政策与移动认证服务协议</p>
+    </footer>
+    <script src="./font/iconfont.js"></script>
+    <script>
+        // 跳转manage
+        var gomanage = document.querySelector('.gomanage')
+            gomanage.addEventListener('click', () => {
+            window.location.href='./manage.html'
+        })
+        // 跳转index
+        var goindex = document.getElementsByTagName("button")[0]
+            goindex.addEventListener('click', () => {
+            window.location.href='./index.html'
+        })
+    </script>
+</body>
+</html>

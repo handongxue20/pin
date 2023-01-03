@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>首页 131 韩冬雪</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/pictures.css">
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+    <style>
+        #header{
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+        }
+        /* 搜索框 */
+        #sousuo{
+            background-color: #eee;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 6px;
+            display: flex;  
+        }
+        #sousuo>span{
+            color: #999;
+            font-size: 20px;
+            width: 35%;
+            flex-grow: 1;
+        }
+        #sousuo .iconfont{
+            text-align: right;
+            padding: 4px;
+        }
+        /* tab选项卡 swiper */
+        #fixedtab{
+            border-bottom: 1px solid #ddd;
+        }
+        .mySwiper{
+            margin: 15px 10px;
+            margin-bottom: 0;
+            font-size: 20px;
+            color: #333;
+            text-align: center;     
+        }
+        .fixedcur{
+            border-bottom: 1px solid rgb(174, 4, 4);
+            color: rgb(174, 4, 4);;   
+        } 
+        /* 商品推荐 */
+        .mainlist{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .mainlist>li{
+            border-radius: 8px;
+            margin: 5px auto;
+            width: 48%;
+        }
+        .mainbox{
+            margin:5px auto;
+        }
+        .mainbox img{
+            width: 100%;
+            height: 180px;
+        }
+        .mainbox span{
+            font-size: 15px;
+            color: #000;
+        }
+        .mainbox p:nth-of-type(1){
+            color: #999;
+            font-size: 14px;
+        }
+        .pricebox{
+            display: flex;
+        }
+        .pricebox p:nth-of-type(1){
+            color:rgb(174, 4, 4);
+            font-size: 15px;
+            padding: 3px;
+            padding-left: 0;
+        }
+        .pricebox p:nth-of-type(2){
+            color: #999;
+            font-size: 14px;
+            padding: 3px;
+        }
+        /* 下导航 */
+        #bnav li:nth-of-type(1) {
+            color: rgb(174,4,4);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="sousuo" class="gosearch">
+            <span class="iconfont icon-sousuo"></span>
+            <span>索尼85x95k</span>
+            <span class="iconfont icon-xiangji"></span>
+        </div>
+        <div id="fixedtab">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide fixedcur">推荐</div>
+                    <div class="swiper-slide">食品</div>
+                    <div class="swiper-slide">手机</div>
+                    <div class="swiper-slide">女装</div>
+                    <div class="swiper-slide">男装</div>
+                    <div class="swiper-slide">鞋包</div>
+                    <div class="swiper-slide">水果</div>
+                    <div class="swiper-slide">百货</div>
+                    <div class="swiper-slide">医药</div>
+                    <div class="swiper-slide">电器</div>
+                    <div class="swiper-slide">内衣</div>
+                    <div class="swiper-slide">美妆</div>
+                    <div class="swiper-slide">车品</div>
+                    <div class="swiper-slide">家具</div>
+                    <div class="swiper-slide">饰品</div>
+                    <div class="swiper-slide">运动</div>
+                    <div class="swiper-slide">家装</div>
+                    <div class="swiper-slide">母婴</div>
+                    <div class="swiper-slide">电脑</div>
+                    <div class="swiper-slide">家纺</div>
+                    <div class="swiper-slide">海淘</div>
+                    <div class="swiper-slide">玩乐</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="section">
+        <div id="pin">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-pintuan1"></use>
+            </svg>
+            <span>拼小圈</span>
+            <p>邀请好友加入</p>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </section>
+    <section id="iconlist">
+        <div class="swiper iconSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-miaosha"></use>
+                </svg>
+                <p>限时秒杀</p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-chongzhi"></use>
+                </svg>
+                <p>充值中心</p>
+              </div>
+              <div class="swiper-slide">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shengqiandai"></use>
+                </svg>
+                <p>断码清仓</p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-hongbao1"></use>
+                </svg>
+                <p>每日摇红包</p>
+              </div>
+              <div class="swiper-slide">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dazhuanpan"></use>
+                </svg>
+                <p>现金大转盘</p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-pintuan"></use>
+                </svg>
+                <p>多人团</p>
+              </div>
+              <div class="swiper-slide">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shucai"></use>
+                </svg>
+                <p>免费领水果</p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-yiliao_yiyaoxiang"></use>
+                </svg>
+                <p>医药馆</p>
+              </div>
+              <div class="swiper-slide">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-temai"></use>
+                </svg>
+                <p>9块9特卖</p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-0yuankanjia"></use>
+                </svg>
+                <p>免费领商品</p>
+              </div>
+              <div class="swiper-slide">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xingxing"></use>
+                </svg>
+                <p>多多爱消除</p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-nvzhuang"></use>
+                </svg>
+                <p>宝藏女装</p>
+              </div>
+              <div class="swiper-slide">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-hongbao2"></use>
+                </svg>
+                <p>天天领现金</p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-butie"></use>
+                </svg>
+                <p>省钱月卡</p>
+              </div>
+              <div class="swiper-slide">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixinzhifu"></use>
+                </svg>
+                <p>现金免费拿</p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-hongbao"></use>
+                </svg>
+                <p>拼手速拿钱</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <section id="duoduomaicai">
+        <div id="box">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-pinduoduo"></use>
+            </svg>
+            <span>多多买菜</span>
+            <p>次日自提</p>
+        </div>
+        <ul class="duolist">
+            
+        </ul>
+    </section>
+    <section id="baiyibutie">
+        <div id="box">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-qiandai"></use>
+            </svg>
+            <span>百亿补贴</span>
+            <p>大牌正品</p>
+        </div>
+        <ul class="bailist">
+            
+        </ul>
+    </section>
+    <main id="main">
+        <ul class="mainlist">
+        </ul>
+    </main>
+    <nav id="bnav">
+        <ul class="navlist">    
+        </ul>
+    </nav>
+    <script src="./js/icon.js"></script>
+    <script src="./font/iconfont.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "7.5",
+          spaceBetween: 0,
+        });
+        var swiper = new Swiper(".iconSwiper", {
+        slidesPerView: "5",
+        spaceBetween: 0,
+        });
+        var jarrduo=[{
+            img:"./img/d1.jpg",
+            title:"￥4.81"
+        },{
+            img:"./img/d2.jpg",
+            title:"￥79.99"
+        },{
+            img:"./img/d3.jpg",
+            title:"￥5.99"
+        },{
+            img:"./img/d4.jpg",
+            title:"￥11.99"
+        }]
+        function insertduo(){
+        var duolist=document.querySelector(".duolist");
+        //dom
+        jarrduo.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+                <img src="${v.img}">
+                <p>${v["title"]}</p>
+            `;
+            // 反引号
+            duolist.appendChild(nli);
+        })
+    }
+        insertduo(jarrduo);
+        var jarrbai=[{
+            img:"./img/b1.jpg",
+            title:"￥5076"
+        },{
+            img:"./img/b2.jpg",
+            title:"￥5369"
+        },{
+            img:"./img/b3.jpg",
+            title:"￥4849"
+        },{
+            img:"./img/b4.jpg",
+            title:"￥7899"
+        }]
+        function insertbai(){
+        var bailist=document.querySelector(".bailist");
+        //dom
+        jarrbai.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+                <img src="${v.img}">
+                <p>${v["title"]}</p>
+            `;
+            // 反引号
+            bailist.appendChild(nli);
+        })
+    }
+         insertbai(jarrbai);
+
+         var jarr=[{
+            picture:"./img/i1.jpg",
+            name:"光遇小兔子头饰光遇Cos小",
+            content:"退货包邮费",
+            price:"￥6",
+            state:"已拼3.1万件"
+        },{
+            picture:"./img/i2.jpg",
+            name:"【新品冲量 亏本800件】睡",
+            content:"退货包邮费 极速退款",
+            price:"￥43.5",
+            state:"已拼10万+件"
+        },{
+            picture:"./img/i3.jpg",
+            name:"烤火盆家用烤火盆户外烧烤",
+            content:"退货包邮费 极速退款",
+            price:"￥6.8",
+            state:"已拼5334件"
+        },{
+            picture:"./img/i4.jpg",
+            name:"小红书同款圣诞树星星瓶星",
+            content:"新品",
+            price:"￥3.99",
+            state:"已拼3298件"
+        },{
+            picture:"./img/i5.jpg",
+            name:"苹果Apple AirPods Pro 配",
+            content:"正品发票 分期付款",
+            price:"￥1499",
+            state:"已拼9件"
+        },{
+            picture:"./img/i6.jpg",
+            name:"vivoy52s手机壳兔年液态硅",
+            content:"满10减1",
+            price:"券后￥9.9",
+            state:"已拼1251万件"
+        },{
+            picture:"./img/i7.jpg",
+            name:"冬季新款中老年帽子女针织",
+            content:"满59减2",
+            price:"￥1.65",
+            state:"已拼10万+件"
+        },{
+            picture:"./img/i8.jpg",
+            name:"五粮液",
+            content:"品质险 假一赔十",
+            price:"￥1756",
+            state:"已拼695件"
+        }]
+        function insert(jarr){
+        var mainlist=document.querySelector(".mainlist");
+        jarr.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+                <div class="mainbox">
+                    <img src="${v.picture}">
+                    <span>${v.name}</span>
+                    <p>${v.content}</p>
+                    <div class="pricebox">
+                    <p>${v.price}</p>
+                    <p>${v.state}</p>
+                    </div>
+                </div>
+            `;
+            mainlist.appendChild(nli);
+        })
+    }
+        insert(jarr);
+        // 滚动，header固定
+        window.onscroll=()=>{
+            var st=document.documentElement.scrollTop;
+            if(st>header.offsetHeight){
+                header.style.position="fixed";
+            }
+            else{
+                header.style.position="static";
+            }
+        }
+        // 跳转search
+        var gosearch = document.querySelector('.gosearch')
+            gosearch.addEventListener('click', () => {
+            window.location.href='./search.html'
+        })
+        // 跳转mine
+        var tomine = document.querySelector(".navlist>li:nth-of-type(5)");
+            tomine.onclick =()=>{
+            window.location.href = "./mine.html";        
+        }
+    </script>
+</body>
+</html>

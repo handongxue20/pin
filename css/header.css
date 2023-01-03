@@ -1,0 +1,22 @@
+/* 顶部框 */
+#header{
+    margin: 8px;
+    padding-top: 5px;
+} 
+#tnav{
+    display: flex;
+}
+#tnav :first-child{
+    font-size: 24px;
+    flex-grow: 1;
+}
+#tnav :nth-child(2){
+    font-size: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+#tnav :last-child{
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: right;
+}

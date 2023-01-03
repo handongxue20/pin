@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>个人中心 131 韩冬雪</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/jingpin.css">
+    <style>
+        /* 顶部栏 */
+        #header {
+            margin: 15px 15px ;
+            display: flex;
+        }
+        #header div>img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: .7px solid #fff ;
+            padding: 10px;
+        }
+        #header div:nth-of-type(1){
+            width: 35%; 
+        }
+        #header div:nth-of-type(2){
+            padding-left: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 60%;
+        }
+        #header div:nth-of-type(2) span:nth-of-type(1){
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #header div:nth-of-type(2) span:nth-of-type(2){
+            font-size: 16px;
+            flex-grow: 1;
+        }
+        #header div:nth-of-type(2) svg{
+            font-size: 25px;
+        }
+        #btn{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #btn button{
+            background-color: #fff;
+            margin-top: 8px;
+            padding: 5px;
+            border-radius: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+            flex-grow: 1;
+            font-size: 18px;
+        }
+        #btn span{
+            font-size: 20px;
+            color: red;
+        }
+        /* 省钱月卡栏 */
+        #ad{
+            margin: 10px;
+            background-color: rgb(251, 218, 218);
+            display: flex;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 12px;
+        }
+        #ad span{
+            font-size: 18px;
+            color: rgb(174,4,4);
+        }
+        #ad p{
+            font-size: 16px;
+            color: rgb(174,4,4);
+            padding-left: 10px;
+            padding-top:2px;
+        }
+        #ad .iconfont{
+            flex-grow: 1;
+            text-align: right;
+            font-size: 20px;
+        }
+        /* 我的订单栏 */
+        #myorder{
+            display: flex;
+            margin: 10px;
+        }
+        #myorder p{
+            font-size: 18px;
+            color: #999;
+            flex-grow: 1;
+        }
+        #myorder span:nth-of-type(1){
+            font-size: 20px;
+            font-weight: bold;
+            width: 72%;
+        }
+        #myorder .iconfont{
+            font-size: 22px;
+            flex-grow: 1;
+            text-align: right;
+        }
+        #ilist{
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        #ilist li{
+            display: flex;      
+            width: 20%;
+            text-align: center;  
+            flex-wrap: wrap;
+        }
+        #ilist span{
+            font-size: 35px;
+            margin: 8px;
+            flex-grow: 1;
+            color: #999;
+        }
+        #ilist p{
+            font-size: 18px;
+            flex-grow: 1;
+            color: #666;
+        }
+        #order{
+            border-bottom:8px solid rgb(243, 243, 243) ;
+        }
+        /* 多多钱包栏 */
+        #duoduoqianbao{
+            border-bottom:8px solid rgb(243, 243, 243) ;
+        }
+        #wallet{
+            display: flex;
+            margin: 10px;
+        }
+        #wallet p{
+            font-size: 18px;
+            color: #999;
+            flex-grow: 1;
+        }
+        #wallet span:nth-of-type(1){
+            font-size: 20px;
+            width: 72%;
+        }
+        #wallet .iconfont{
+            font-size: 22px;
+            flex-grow: 1;
+            text-align: right;
+        }
+       /* 优惠券..工具栏 */
+       #tool{
+            border-bottom:8px solid rgb(243, 243, 243) ;
+        }
+        .tlist{
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .tlist li{
+            display: flex;      
+            width: 20%;
+            text-align: center;  
+            flex-wrap: wrap;
+            margin: 15px 5px;
+            flex-grow: 1;
+        }
+        .tlist span{
+            font-size: 30px;
+            margin: 8px;
+            flex-grow: 1;
+            color:rgb(174,4,4);
+        }
+        .tlist p{
+            font-size: 16px;
+            flex-grow: 1;
+            color: #666;
+        }
+        .toolicon{
+            flex-grow: 1;
+            margin: 6px 0;
+        }
+       /* 多多果园..图标栏 */
+       #help{
+            border-bottom:8px solid rgb(243, 243, 243) ;
+        }
+        .hlist{
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .hlist li{
+            display: flex;      
+            width: 19%;
+            text-align: center;  
+            flex-wrap: wrap;
+        }
+        .hlist span{
+            font-size: 32px;
+            margin: 8px;
+            color: rgb(249, 201, 114);
+        }
+        .hlist p{
+            font-size: 14px;
+            color: #666;
+            padding: 5px 0; 
+        }
+        .helpicon{
+            flex-grow: 1;
+            margin: 6px 0;
+        }
+       /* 先用后付栏 */
+        #advertisement{
+            border-bottom:8px solid rgb(243, 243, 243) ;
+            display: flex;
+            padding: 8px 0;
+        }
+        #advertisement div:nth-of-type(1) span{
+            font-size: 45px;
+            color: rgb(108, 221, 8);
+        }
+        #advertisement div:nth-of-type(2) span{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #advertisement div:nth-of-type(2) p{
+            font-size: 18px;
+        }
+        #advertisement span:nth-child(3){
+            background-color: rgb(246, 88, 88);
+            margin: 0 5px;
+            padding:12px 2px;
+            color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+            flex-grow: 1;
+            font-size: 16px;
+        }
+       /* 下导航 */
+        #bnav li:nth-of-type(5) {
+            color: rgb(174,4,4);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div><img src="./img/tx.jpg"></div>
+        <div>
+            <span>131</span>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-QQ"></use>
+            </svg>
+            <span>我的拼小圈 ></span>
+        </div>
+        <div id="btn">
+            <button>
+                <span class="iconfont icon-icon6"></span>
+                直接免单
+            </button>
+            <button>
+                <span class="iconfont icon-tuikuan"></span>
+                拼单返现
+            </button>
+        </div>
+    </header>
+    <section id="order">
+        <div id="ad">
+            <span>省钱月卡</span>
+            <p>先领券 再下单</p>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+        <div id="myorder">
+            <span>我的订单</span>
+            <a href="./order.html">
+                <p>查看全部</p>
+            </a>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+        <ul id="ilist">
+            <li>
+                <span class="iconfont icon-daifukuan"></span>
+                <p>待收款</p>
+            </li>
+            <li>
+                <span class="iconfont icon-fenxiang"></span>
+                <p>待分享</p>
+            </li>
+            <li>
+                <span class="iconfont icon-shizhong"></span>
+                <p>待发货</p>
+            </li>
+            <li>
+                <span class="iconfont icon-transport"></span>
+                <p>待收货</p>
+            </li>
+            <li>
+                <span class="iconfont icon-pingjia"></span>
+                <p>评价</p>
+            </li>
+        </ul>
+    </section>
+    <section id="duoduoqianbao">
+        <div id="wallet">
+            <span>多多钱包</span>
+            <p>立即开通</p>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </section>
+    <section id="tool">
+        <ul class="tlist">
+            
+        </ul>
+    </section>
+    <section id="help">
+        <ul class="hlist">
+
+        </ul>
+    </section>
+    <section id="advertisement">
+        <div>
+            <span class="iconfont icon-icon6"></span>
+        </div>
+        <div>
+            <span>领先用后付专属资格</span>
+            <p>可享0元下单，确认收货后再付款</p>
+        </div>
+        <span>
+            立即领取
+        </span>
+    </section>
+    <main id="main">
+        <div class="recommend">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jingxuan"></use>
+              </svg>
+            <span>精品推荐</span>
+        </div>
+        <ul class="rlist">
+
+        </ul>
+    </main>
+    <nav id="bnav">
+        <ul class="navlist">
+            
+        </ul>
+    </nav>
+    <script src="./js/icon.js"></script>
+    <script src="./font/iconfont.js"></script>
+    <script>
+         var jarr=[{
+            iconfont:"icon-youhuiquan",
+            title:"优惠券"
+        },{
+            iconfont:"icon-shangpinshoucangcollect",
+            title:"商品收藏"
+        },{
+            iconfont:"icon-dianpu",
+            title:"店铺关注"
+        },{
+            iconfont:"icon-zuji",
+            title:"历史浏览"
+        },{
+            iconfont:"icon-tuikuan1",
+            title:"退款售后"
+        }]
+        function insert(){
+        var tlist=document.querySelector(".tlist");
+        //dom
+        jarr.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+            <div class="toolicon">
+                    <span class="iconfont ${v.iconfont}"></span>
+                    <p>${v["title"]}</p>
+                </div>
+            `;
+            // 反引号
+            tlist.appendChild(nli);
+        })
+    }
+        insert(jarr);
+
+        var jarr1=[{
+            iconfont:"icon-shu",
+            title:"多多果园"
+        },{
+            iconfont:"icon-dazhuanpan1",
+            title:"现金大转盘"
+        },{
+            iconfont:"icon-tuikuan",
+            title:"天天领现金"
+        },{
+            iconfont:"icon-xingxing",
+            title:"多多爱消除"
+        },{
+            iconfont:"icon-niu",
+            title:"多多牧场"
+        },{
+            iconfont:"icon-huiyuan",
+            title:"黑卡抵扣金"
+        },{
+            iconfont:"icon-huochepiao",
+            title:"火车票"
+        },{
+            iconfont:"icon-dingxiang",
+            title:"收货地址"
+        },{
+            iconfont:"icon-kefu",
+            title:"官方客服"
+        },{
+            iconfont:"icon-shezhi",
+            title:"设置"
+        }]
+        function insert1(){
+        var hlist=document.querySelector(".hlist");
+        //dom
+        jarr1.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+            <div class="helpicon">
+                    <span class="iconfont ${v.iconfont}"></span>
+                    <p>${v["title"]}</p>
+                </div>
+            `;
+            // 反引号
+            hlist.appendChild(nli);
+        })
+    }
+        insert1(jarr1);
+
+        var jarr2=[{
+            picture:"./img/i1.jpg",
+            name:"光遇小兔子头饰光遇Cos小",
+            content:"退货包邮费",
+            price:"￥6",
+            state:"已拼3.1万件"
+        },{
+            picture:"./img/i2.jpg",
+            name:"【新品冲量 亏本800件】睡",
+            content:"退货包邮费 极速退款",
+            price:"￥43.5",
+            state:"已拼10万+件"
+        },{
+            picture:"./img/i3.jpg",
+            name:"烤火盆家用烤火盆户外烧烤",
+            content:"退货包邮费 极速退款",
+            price:"￥6.8",
+            state:"已拼5334件"
+        },{
+            picture:"./img/i4.jpg",
+            name:"小红书同款圣诞树星星瓶星",
+            content:"新品",
+            price:"￥3.99",
+            state:"已拼3298件"
+        }]
+        function insert2(){
+        var rlist=document.querySelector(".rlist");
+        //dom
+        jarr2.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+            <div class="mainbox">
+                    <img src="${v.picture}">
+                    <span>${v.name}</span>
+                    <p>${v.content}</p>
+                    <div class="pricebox">
+                    <p>${v.price}</p>
+                    <p>${v.state}</p>
+                    </div>
+                </div>
+            `;
+            // 反引号
+            rlist.appendChild(nli);
+        })
+    }
+        insert2(jarr2);
+
+        // 跳转index
+        var toindex = document.querySelector(".navlist>li:nth-of-type(1)");
+            toindex.onclick =()=>{
+            window.location.href = "./index.html";        
+        }
+        // 跳转manage
+        var tomanage = document.querySelector(".hlist>li:nth-of-type(10)");
+            tomanage.onclick =()=>{
+            window.location.href = "./manage.html";        
+        }
+    </script>
+</body>
+</html>

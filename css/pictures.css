@@ -1,0 +1,118 @@
+#section{
+    border-bottom:8px solid rgb(243, 243, 243) ;
+}
+#pin{
+    display: flex;
+    margin: 0 12px;
+    flex-grow: 1;
+    line-height: 60px;
+}
+#pin svg{
+    font-size: 40px;
+    padding: 10px;
+}
+#pin span{
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#pin p{
+    flex-grow: 1;
+    text-align: right;
+    font-size: 18px;
+    color: #ccc;
+}
+#pin .iconfont{
+    font-size: 18px;
+    color: #ccc;
+}
+#iconlist{
+    border-bottom:8px solid rgb(243, 243, 243) ;
+}
+.iconSwiper svg{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 8px;
+}
+.iconSwiper p{
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 22%;
+    margin: 5px;
+    text-align: center;
+    border-right:.8px solid #ddd;
+}
+#box svg{
+    flex-wrap: wrap;
+    font-size: 40px;
+    flex-grow: 1;
+}
+#box span{
+    flex-wrap: wrap;
+    font-size: 17px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+#box p{
+    font-size: 15px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
+}
+#duoduomaicai{
+    border-bottom:8px solid rgb(243, 243, 243);
+    display: flex;
+}
+.duolist{
+    display: flex;
+    width: 75%;
+}
+.duolist li{
+    width: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.duolist img{
+    width: 100%;
+    margin: 5px auto;
+}
+.duolist p{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(174, 4, 4);
+    flex-grow: 1;
+}
+#baiyibutie{
+    border-bottom:8px solid rgb(243, 243, 243) ;
+    display: flex;
+}
+.bailist{
+    display: flex;
+    width: 75%;
+}
+.bailist li{
+    width: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.bailist img{
+    width: 100%;
+    margin: 5px auto;
+}
+.bailist p{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(174, 4, 4);
+    flex-grow: 1;
+}

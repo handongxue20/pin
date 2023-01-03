@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>搜索 131 韩冬雪</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        /* 搜索框 */
+        #header{
+            display: flex;
+            margin-top: 20px;
+        }
+        #header>span:first-child{
+            font-size: 20px;
+            padding: 0 5px;
+            color: #999;
+            line-height: 30px;
+        }
+        #header div{
+            flex-grow: 1;
+            background-color: #eee;
+            border-radius: 12px;
+            display: flex;
+        }
+        #header div span{
+            font-size: 20px;
+            margin: 0 6px;
+            line-height: 30px;
+        }
+        #header input{
+            border:none;
+            outline: none;
+            background-color: #eee;
+            line-height: 30px;
+            flex-grow: 1;
+            border-radius: 12px;
+        }
+        #header select{
+            border-radius: 12px;
+            border:none;
+            font-size: 20px;
+            background-color: #eee;
+        }
+        .txt{
+            font-size: 20px;
+            margin: 0 10px;
+            color: rgb(205, 8, 8);
+            line-height: 30px;
+        }
+        /* 搜索发现 */
+        #list{
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            margin: 8px;
+        }
+        #list li{
+            border-radius: 20px;
+            margin: 5px 5px;
+            padding: 5px 10px;
+            line-height: 18px;
+            background-color: #eee;
+        }
+        #list span{
+            font-size: 18px;
+            color: #333;
+        }
+        #search{
+            display: flex;
+            margin: 8px;
+        }
+        #search p{
+            font-size: 18px;
+            color: #999;
+            margin-left: 8px;
+            width: 90%;
+        }
+        #search span{
+            font-size: 20px;
+        }
+        #search span:nth-of-type(2){
+            flex-grow: 1;
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <span class="iconfont icon-xiangzuojiantou toindex"></span>
+        <div>
+            <select name="good">
+                <option value="1" selected>商品</option>
+                <option value="2">店铺</option>
+            </select>
+            <input type="text" placeholder="保温杯 大容量">
+            <span class="iconfont icon-xiangji"></span>
+        </div>
+        <span class="txt">搜索</span>
+    </header>
+    <main id="main">
+        <div id="search">
+            <span class="iconfont icon-sousuo"></span>
+            <p>搜索发现</p>
+            <span class="iconfont icon-yanjing"></span>
+        </div>
+        <div id="text">
+            <ul id="list">
+                <li>
+                    <div><span>今日红包</span></div>
+                </li>
+                <li>
+                    <div><span>开心抢红包</span></div>
+                </li>
+                <li>
+                    <div><span>微信红包</span></div>
+                </li>
+                <li>
+                    <div><span>卫衣女</span></div>
+                </li>
+                <li>
+                    <div><span>冬季外套</span></div>
+                </li>
+                <li>
+                    <div><span>沙发套</span></div>
+                </li>
+                <li>
+                    <div><span>按动笔</span></div>
+                </li>
+                <li>
+                    <div><span>梳妆台</span></div>
+                </li>
+                <li>
+                    <div><span>女士羽绒服</span></div>
+                </li>
+                <li>
+                    <div><span>和平精英皮肤</span></div>
+                </li>
+                <li>
+                    <div><span>秋衣秋裤</span></div>
+                </li>
+                <li>
+                    <div><span>女童袜子</span></div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        var btn1=document.querySelector("#search>span:nth-of-type(2)");
+            btn1.onclick =()=>{
+                text.style.display="none"
+        }
+        var btn2=document.querySelector("#search>span:nth-of-type(1)");
+            btn2.onclick =()=>{
+                text.style.display="block"
+        }
+        // 跳转index
+        var toindex = document.querySelector(".toindex");
+            toindex.onclick =()=>{
+            window.location.href = "./index.html";        
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+#bnav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;/* 一定要设置 */
+    z-index: 9;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+body{
+    margin-bottom: 100px;/* 值为下导航的高度 */
+}
+#bnav ul{
+    display: flex;
+    
+}
+#bnav li{
+    width: 20%;
+    text-align: center;
+    
+}
+#bnav span{
+    font-size: 28px;
+    margin: 5px auto;
+    margin: 10px auto;
+} 
+#bnav p{
+    font-size: 14px;
+    line-height: 22px;
+}
+#bnav :nth-child(3){
+    color: rgb(245, 51, 51);
+}
